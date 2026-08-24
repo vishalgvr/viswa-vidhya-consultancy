@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none">
+  <defs>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e3a8a"/>
+      <stop offset="50%" stop-color="#0284c7"/>
+      <stop offset="100%" stop-color="#0d9488"/>
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fbbf24"/>
+      <stop offset="100%" stop-color="#f59e0b"/>
+    </linearGradient>
+  </defs>
+  <rect width="100" height="100" rx="24" fill="url(#grad1)" />
+  <circle cx="50" cy="50" r="32" stroke="white" stroke-width="2.5" stroke-dasharray="3 3" opacity="0.4"/>
+  <!-- Graduation cap & globe wings -->
+  <path d="M50 24L76 37L50 50L24 37Z" fill="url(#goldGrad)"/>
+  <path d="M34 43V58C34 66 50 72 50 72C50 72 66 66 66 58V43" stroke="white" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M72 40V56" stroke="#fbbf24" stroke-width="2.5" stroke-linecap="round"/>
+  <circle cx="72" cy="58" r="2.5" fill="#fbbf24"/>
+  <!-- Star / Compass -->
+  <circle cx="50" cy="56" r="3.5" fill="#38bdf8"/>
+</svg>
