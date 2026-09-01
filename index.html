@@ -1,37 +1,985 @@
-<!doctype html>
-<html lang="en" class="scroll-smooth">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
-    <!-- Primary Meta Tags -->
-    <title>Viswa Vidhya Educational Consultancy | Study Abroad & MBBS Guidance</title>
-    <meta name="title" content="Viswa Vidhya Educational Consultancy | Study Abroad & MBBS Guidance" />
-    <meta name="description" content="Personalized career guidance, trusted global destinations (Germany, Hungary, Mauritius), MBBS abroad admissions, and complete visa support from Viswa Vidhya Educational Consultancy. Mentored by Arunlal M S." />
-    <meta name="keywords" content="Study Abroad, MBBS in Mauritius, Study in Germany, Study in Hungary, Career Counselling, MBBS Abroad, Educational Consultancy, Viswa Vidhya, Arunlal M S" />
-    <meta name="author" content="Viswa Vidhya Educational Consultancy" />
-    <meta name="theme-color" content="#0f172a" />
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  
+  <!-- Primary Meta Tags -->
+  <title>Viswa Vidhya Educational Consultancy | Study Abroad & MBBS Guidance</title>
+  <meta name="title" content="Viswa Vidhya Educational Consultancy | Study Abroad & MBBS Guidance">
+  <meta name="description" content="Personalized career guidance, trusted global destinations (Mauritius, Germany, Hungary), MBBS abroad admissions, and complete visa support from Viswa Vidhya Educational Consultancy. Mentored by Arunlal M S.">
+  <meta name="keywords" content="Study Abroad, MBBS in Mauritius, Study in Germany, Study in Hungary, Career Counselling, MBBS Abroad, Educational Consultancy, Viswa Vidhya, Arunlal M S">
+  <meta name="theme-color" content="#030712">
 
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="Viswa Vidhya Educational Consultancy | Study Abroad" />
-    <meta property="og:description" content="Your Global Education Journey Starts Here. Personalized guidance for Germany, Hungary, and Mauritius with complete admission and visa support." />
-    <meta property="og:image" content="/images/hero.jpg" />
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Viswa Vidhya Educational Consultancy | Study Abroad">
+  <meta property="og:description" content="Your Global Education Journey Starts Here. Personalized guidance for Mauritius, Germany, and Hungary with complete admission and visa support.">
+  <meta property="og:image" content="images/hero.jpg">
 
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image" />
-    <meta property="twitter:title" content="Viswa Vidhya Educational Consultancy | Study Abroad" />
-    <meta property="twitter:description" content="Your Global Education Journey Starts Here. Personalized guidance for Germany, Hungary, and Mauritius." />
-    <meta property="twitter:image" content="/images/hero.jpg" />
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
 
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  </head>
-  <body class="bg-slate-950 text-slate-100 antialiased selection:bg-amber-400 selection:text-slate-900 font-sans min-h-screen">
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+  <!-- ========================================================================
+       1. Master Header / Navigation
+       ======================================================================== -->
+  <header class="site-header">
+    <div class="container nav-container">
+      
+      <!-- Brand Logo -->
+      <a href="index.html" class="brand-logo">
+        <div class="logo-badge">
+          <div class="logo-inner">
+            <span class="text-gradient-brand">VV</span>
+          </div>
+        </div>
+        <div>
+          <span class="brand-text-title">Viswa Vidhya</span>
+          <span class="brand-text-sub">Educational Consultancy</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <nav class="desktop-nav">
+        <a href="index.html" class="nav-link active">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        
+        <div class="nav-item-dropdown">
+          <a href="destinations.html" class="nav-link">
+            <span>Destinations</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+          </a>
+          <div class="dropdown-menu">
+            <a href="mauritius.html" class="dropdown-item">
+              <span class="dropdown-flag">🇲🇺</span>
+              <div>
+                <div class="dropdown-title">Mauritius</div>
+                <div class="dropdown-desc">MBBS & Safe Island (No IELTS)</div>
+              </div>
+            </a>
+            <a href="destinations.html#germany" class="dropdown-item">
+              <span class="dropdown-flag">🇩🇪</span>
+              <div>
+                <div class="dropdown-title">Germany</div>
+                <div class="dropdown-desc">Tech & Zero Tuition Hub</div>
+              </div>
+            </a>
+            <a href="destinations.html#hungary" class="dropdown-item">
+              <span class="dropdown-flag">🇭🇺</span>
+              <div>
+                <div class="dropdown-title">Hungary</div>
+                <div class="dropdown-desc">EU Degrees & Medical Excellence</div>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <a href="mauritius.html" class="nav-link">
+          <span>Mauritius</span>
+          <span class="nav-link-badge">Popular</span>
+        </a>
+        <a href="mbbs-abroad.html" class="nav-link">
+          <span>MBBS Abroad</span>
+          <span class="nav-link-badge" style="background: rgba(20, 184, 166, 0.2); color: #2dd4bf; border-color: rgba(20, 184, 166, 0.3);">Top Choice</span>
+        </a>
+        <a href="courses.html" class="nav-link">Courses</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="why-choose-us.html" class="nav-link">Why Us</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- Action Buttons -->
+      <div class="nav-actions">
+        <a href="tel:+919487808313" class="phone-quick-btn" title="Call Lead Counsellor">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#fbbf24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          <span>+91 9487808313</span>
+        </a>
+
+        <button data-open-guidance class="btn btn-primary btn-sm">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"/></svg>
+          <span>Get Free Guidance</span>
+        </button>
+
+        <button id="mobileMenuBtn" class="mobile-menu-btn" aria-label="Toggle navigation menu">
+          <span id="mobileMenuIcon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="4" x2="20" y1="12" y2="12"></line>
+              <line x1="4" x2="20" y1="6" y2="6"></line>
+              <line x1="4" x2="20" y1="18" y2="18"></line>
+            </svg>
+          </span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div id="mobileNavDrawer" class="mobile-nav-drawer">
+    <div class="mobile-nav-links">
+      <a href="index.html" class="mobile-nav-link active">Home</a>
+      <a href="about.html" class="mobile-nav-link">About Us</a>
+      <a href="destinations.html" class="mobile-nav-link">Study Destinations (Mauritius, Germany, Hungary)</a>
+      <a href="mauritius.html" class="mobile-nav-link">Mauritius Spotlight 🇲🇺</a>
+      <a href="mbbs-abroad.html" class="mobile-nav-link">MBBS Abroad Guidance</a>
+      <a href="courses.html" class="mobile-nav-link">Courses & Opportunities</a>
+      <a href="services.html" class="mobile-nav-link">Our 8 Services</a>
+      <a href="why-choose-us.html" class="mobile-nav-link">Why Choose Us</a>
+      <a href="contact.html" class="mobile-nav-link">Contact Us</a>
+    </div>
+
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem; margin-top: 1rem; padding-top: 1rem; border-top: 1px solid rgba(255,255,255,0.1);">
+      <a href="tel:+919487808313" class="btn btn-secondary btn-sm" style="font-size: 0.8rem;">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#fbbf24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        <span>Call Now</span>
+      </a>
+      <a href="https://wa.me/919487808313" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp btn-sm" style="font-size: 0.8rem;">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+        <span>WhatsApp</span>
+      </a>
+    </div>
+  </div>
+
+  <main>
+    <!-- ========================================================================
+         2. Hero Section
+         ======================================================================== -->
+    <section class="hero-wrapper">
+      <div class="ambient-glow glow-blue" style="top: 10%; left: 50%; transform: translateX(-50%); width: 700px; height: 450px;"></div>
+      
+      <div class="container">
+        <div class="hero-grid">
+          
+          <!-- Left Column -->
+          <div>
+            <div class="hero-tag">
+              <span class="live-pulse">
+                <span></span>
+                <span></span>
+              </span>
+              <span>Targeting: <strong id="destTickerText" style="color: #fbbf24; transition: opacity 0.2s ease;">🇲🇺 Mauritius</strong></span>
+            </div>
+
+            <h1 class="hero-title">
+              Think Global. <br>
+              <span class="text-gradient-brand">Choose Your Future.</span>
+            </h1>
+
+            <p class="hero-lead">
+              Personalized career guidance, trusted international destinations (Mauritius, Germany, Hungary), and end-to-end support from course selection to university admission and visa approval.
+            </p>
+
+            <div class="hero-cta-group">
+              <button data-open-guidance class="btn btn-primary btn-lg">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"/></svg>
+                <span>Get Free Career Guidance</span>
+              </button>
+
+              <a href="destinations.html" class="btn btn-secondary btn-lg">
+                <span>Explore Destinations</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+              </a>
+            </div>
+
+            <!-- Trust Bar -->
+            <div class="hero-trust-bar">
+              <div>
+                <div class="trust-item-val" style="color: #fbbf24;">1-on-1</div>
+                <div class="trust-item-lbl">Direct Mentorship</div>
+              </div>
+              <div>
+                <div class="trust-item-val" style="color: #2dd4bf;">No IELTS</div>
+                <div class="trust-item-lbl">Options (Mauritius)</div>
+              </div>
+              <div>
+                <div class="trust-item-val" style="color: #60a5fa;">100%</div>
+                <div class="trust-item-lbl">Transparent Advice</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Showcase Column -->
+          <div>
+            <div class="hero-media-card">
+              <img src="images/hero.jpg" alt="Viswa Vidhya Study Abroad Guidance" loading="eager">
+              
+              <!-- Floating FMGE Rank Badge -->
+              <div class="hero-overlay-badge">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fbbf24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 22h16"/><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"/><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"/><path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"/></svg>
+                <div>
+                  <div style="font-size: 0.8rem; font-weight: 800; color: #fbbf24; font-family: var(--font-heading);">FMGE 1st Rank Holder</div>
+                  <div style="font-size: 0.68rem; color: #cbd5e1;">Graduated from Mauritius</div>
+                </div>
+              </div>
+
+              <!-- Bottom Overlay -->
+              <div class="hero-overlay-bottom">
+                <div>
+                  <div style="font-size: 0.72rem; color: #94a3b8; font-weight: 700; text-transform: uppercase;">Lead Counsellor</div>
+                  <div style="font-size: 0.95rem; font-weight: 800; color: #ffffff;">Arunlal M S</div>
+                </div>
+                <a href="tel:+919487808313" class="btn btn-primary btn-sm" style="font-size: 0.75rem; padding: 0.45rem 0.85rem;">
+                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                  <span>Call Direct</span>
+                </a>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         3. Primary Destinations Showcase
+         ======================================================================== -->
+    <section class="section-gap" style="position: relative;">
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="badge badge-amber">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" x2="22" y1="12" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+            <span>Global Destinations</span>
+          </span>
+          <h2 class="section-title">Explore Top Study Destinations</h2>
+          <p class="section-desc">
+            We specialize in verified, reputable educational ecosystems that offer high return on investment, world-class faculties, and clear post-study career paths.
+          </p>
+        </div>
+
+        <div class="grid-3">
+          
+          <!-- Card 1: Mauritius -->
+          <div class="dest-card glass-card-hover">
+            <div class="dest-card-img">
+              <img src="images/mauritius-campus.jpg" alt="Study in Mauritius" loading="lazy">
+              <div class="dest-card-overlay"></div>
+              <div class="dest-flag-badge">
+                <span>🇲🇺</span>
+                <span>Mauritius</span>
+              </div>
+            </div>
+            <div class="dest-card-body">
+              <h3 class="dest-card-title">Mauritius</h3>
+              <div class="dest-card-tagline">Top Choice for MBBS & Higher Education</div>
+              <p class="dest-card-desc">
+                Extremely safe island nation with English-medium curriculums, No IELTS requirement, majority Indian faculty/students, and separate secure hostels.
+              </p>
+              
+              <ul class="dest-features-list">
+                <li>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#fbbf24" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span><strong>No IELTS Required</strong> for admission</span>
+                </li>
+                <li>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#fbbf24" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>Higher FMGE passing average + 1st Rank</span>
+                </li>
+                <li>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#fbbf24" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>Separate boys & girls secure hostels</span>
+                </li>
+              </ul>
+
+              <div style="display: flex; gap: 0.65rem; margin-top: auto;">
+                <a href="mauritius.html" class="btn btn-secondary btn-sm" style="flex: 1;">
+                  <span>Learn More</span>
+                </a>
+                <button data-open-guidance data-dest="Mauritius" data-course="MBBS" class="btn btn-primary btn-sm" style="flex: 1.2;">
+                  <span>Apply Now</span>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2: Germany -->
+          <div class="dest-card glass-card-blue-hover">
+            <div class="dest-card-img">
+              <img src="images/germany.jpg" alt="Study in Germany" loading="lazy">
+              <div class="dest-card-overlay"></div>
+              <div class="dest-flag-badge">
+                <span>🇩🇪</span>
+                <span>Germany</span>
+              </div>
+            </div>
+            <div class="dest-card-body">
+              <h3 class="dest-card-title">Germany</h3>
+              <div class="dest-card-tagline" style="color: #60a5fa;">Engine of Engineering & Innovation</div>
+              <p class="dest-card-desc">
+                Europe’s economic powerhouse offering world-renowned public universities with low to zero tuition fees and up to 18-month post-study work visas.
+              </p>
+              
+              <ul class="dest-features-list">
+                <li>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#60a5fa" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>Zero to minimal tuition fees in public universities</span>
+                </li>
+                <li>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#60a5fa" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>18-Month Job Search / Post-Study Visa</span>
+                </li>
+                <li>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#60a5fa" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>Cutting-edge STEM & Automotive degrees</span>
+                </li>
+              </ul>
+
+              <div style="display: flex; gap: 0.65rem; margin-top: auto;">
+                <a href="destinations.html#germany" class="btn btn-secondary btn-sm" style="flex: 1;">
+                  <span>Learn More</span>
+                </a>
+                <button data-open-guidance data-dest="Germany" data-course="UG" class="btn btn-primary btn-sm" style="flex: 1.2;">
+                  <span>Apply Now</span>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3: Hungary -->
+          <div class="dest-card glass-card-teal-hover">
+            <div class="dest-card-img">
+              <img src="images/hungary.jpg" alt="Study in Hungary" loading="lazy">
+              <div class="dest-card-overlay"></div>
+              <div class="dest-flag-badge">
+                <span>🇭🇺</span>
+                <span>Hungary</span>
+              </div>
+            </div>
+            <div class="dest-card-body">
+              <h3 class="dest-card-title">Hungary</h3>
+              <div class="dest-card-tagline" style="color: #2dd4bf;">EU Standard Heritage & Medicine</div>
+              <p class="dest-card-desc">
+                Prestigious centuries-old European universities recognized across the EU and globally, with accessible tuition costs and scholarship opportunities.
+              </p>
+              
+              <ul class="dest-features-list">
+                <li>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#2dd4bf" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>EU Accredited Medical & Science Degrees</span>
+                </li>
+                <li>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#2dd4bf" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>Stipendium Hungaricum Scholarship options</span>
+                </li>
+                <li>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#2dd4bf" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>Affordable living costs in vibrant student cities</span>
+                </li>
+              </ul>
+
+              <div style="display: flex; gap: 0.65rem; margin-top: auto;">
+                <a href="destinations.html#hungary" class="btn btn-secondary btn-sm" style="flex: 1;">
+                  <span>Learn More</span>
+                </a>
+                <button data-open-guidance data-dest="Hungary" data-course="MBBS" class="btn btn-primary btn-sm" style="flex: 1.2;">
+                  <span>Apply Now</span>
+                </button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         4. Mauritius Spotlight & MBBS Abroad Feature
+         ======================================================================== -->
+    <section class="section-gap" style="background: rgba(11, 19, 41, 0.5); position: relative;">
+      <div class="container">
+        
+        <div class="grid-2" style="align-items: center;">
+          
+          <div>
+            <span class="badge badge-teal">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              <span>Spotlight Feature</span>
+            </span>
+
+            <h2 class="section-title" style="margin-top: 0.75rem;">
+              Why Mauritius is the Top Choice for <span class="text-gradient-amber">Indian Medical Students</span>
+            </h2>
+
+            <p class="section-desc" style="margin-bottom: 1.5rem;">
+              Medical education in Mauritius combines international quality standards with the warmth of Indian cultural and culinary familiarity.
+            </p>
+
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 2rem;">
+              <div style="padding: 1rem; border-radius: var(--radius-md); background: rgba(15, 23, 42, 0.7); border: 1px solid var(--border-subtle);">
+                <div style="font-weight: 800; color: #ffffff; font-size: 0.95rem; margin-bottom: 0.25rem;">Very Low Crime Rate</div>
+                <div style="font-size: 0.78rem; color: #94a3b8;">Safe, peaceful island with strict student safety protocols.</div>
+              </div>
+
+              <div style="padding: 1rem; border-radius: var(--radius-md); background: rgba(15, 23, 42, 0.7); border: 1px solid var(--border-subtle);">
+                <div style="font-weight: 800; color: #ffffff; font-size: 0.95rem; margin-bottom: 0.25rem;">No IELTS Required</div>
+                <div style="font-size: 0.78rem; color: #94a3b8;">Direct English-medium admission without exam hurdles.</div>
+              </div>
+
+              <div style="padding: 1rem; border-radius: var(--radius-md); background: rgba(15, 23, 42, 0.7); border: 1px solid var(--border-subtle);">
+                <div style="font-weight: 800; color: #ffffff; font-size: 0.95rem; margin-bottom: 0.25rem;">Indian Faculty & Students</div>
+                <div style="font-size: 0.78rem; color: #94a3b8;">Majority professors and peers from Indian medical backgrounds.</div>
+              </div>
+
+              <div style="padding: 1rem; border-radius: var(--radius-md); background: rgba(15, 23, 42, 0.7); border: 1px solid var(--border-subtle);">
+                <div style="font-weight: 800; color: #ffffff; font-size: 0.95rem; margin-bottom: 0.25rem;">Separate Hostels & Mess</div>
+                <div style="font-size: 0.78rem; color: #94a3b8;">Dedicated hostels for boys & girls with authentic Indian food.</div>
+              </div>
+            </div>
+
+            <div style="display: flex; flex-wrap: wrap; gap: 0.85rem;">
+              <a href="mauritius.html" class="btn btn-teal">
+                <span>Explore Mauritius MBBS</span>
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+              </a>
+              <button data-open-guidance data-dest="Mauritius" data-course="MBBS" class="btn btn-secondary">
+                <span>Request Fee Structure</span>
+              </button>
+            </div>
+          </div>
+
+          <div>
+            <div class="glass-panel" style="padding: 0.75rem; overflow: hidden; border-radius: var(--radius-xl);">
+              <img src="images/mauritius-hospital.jpg" alt="Mauritius Medical Training" style="border-radius: var(--radius-lg); height: 380px; width: 100%; object-fit: cover;" loading="lazy">
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         5. The 8 Step Comprehensive Guidance Process
+         ======================================================================== -->
+    <section class="section-gap">
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="badge badge-blue">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            <span>Complete Support</span>
+          </span>
+          <h2 class="section-title">Our 8-Step End-to-End Services</h2>
+          <p class="section-desc">
+            From initial career assessment to landing on your international university campus, we handle every stage with precision and transparency.
+          </p>
+        </div>
+
+        <div class="grid-4">
+          
+          <div class="service-step-card">
+            <span class="step-num-badge">01</span>
+            <div class="service-icon-box">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/></svg>
+            </div>
+            <h3 class="service-step-title">Career Counselling</h3>
+            <p class="service-step-desc">In-depth 1-on-1 profile evaluation to map your passions, academic background, and budget.</p>
+            <div class="service-step-action">Step 1: Goal Mapping</div>
+          </div>
+
+          <div class="service-step-card">
+            <span class="step-num-badge">02</span>
+            <div class="service-icon-box">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5Z"/><path d="M6 6h10"/><path d="M6 10h10"/></svg>
+            </div>
+            <h3 class="service-step-title">Course Selection</h3>
+            <p class="service-step-desc">Identify high-growth UG, PG, MBBS, or diploma programs aligned with your future aspirations.</p>
+            <div class="service-step-action">Step 2: Program Matching</div>
+          </div>
+
+          <div class="service-step-card">
+            <span class="step-num-badge">03</span>
+            <div class="service-icon-box">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" x2="22" y1="12" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+            </div>
+            <h3 class="service-step-title">Country Selection</h3>
+            <p class="service-step-desc">Evaluate destinations based on safety, living costs, post-study work options, and language.</p>
+            <div class="service-step-action">Step 3: Country Fit</div>
+          </div>
+
+          <div class="service-step-card">
+            <span class="step-num-badge">04</span>
+            <div class="service-icon-box">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="16" height="20" x="4" y="2" rx="2" ry="2"/><path d="M9 22v-4h6v4"/><path d="M8 6h.01"/><path d="M16 6h.01"/><path d="M8 10h.01"/><path d="M16 10h.01"/><path d="M8 14h.01"/><path d="M16 14h.01"/></svg>
+            </div>
+            <h3 class="service-step-title">University Selection</h3>
+            <p class="service-step-desc">Shortlist officially accredited and NMC/WHO recognized universities with proven track records.</p>
+            <div class="service-step-action">Step 4: Accreditation Match</div>
+          </div>
+
+          <div class="service-step-card">
+            <span class="step-num-badge">05</span>
+            <div class="service-icon-box">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><polyline points="14 2 14 8 20 8"/><path d="m9 15 2 2 4-4"/></svg>
+            </div>
+            <h3 class="service-step-title">Application Support</h3>
+            <p class="service-step-desc">Flawless documentation, transcript validation, and persuasive Statement of Purpose (SOP) guidance.</p>
+            <div class="service-step-action">Step 5: Error-Free Filing</div>
+          </div>
+
+          <div class="service-step-card">
+            <span class="step-num-badge">06</span>
+            <div class="service-icon-box">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 22h16"/><path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"/></svg>
+            </div>
+            <h3 class="service-step-title">Admission Support</h3>
+            <p class="service-step-desc">Liaise directly with university admissions officers to secure your official offer and seat confirmation.</p>
+            <div class="service-step-action">Step 6: Offer Confirmation</div>
+          </div>
+
+          <div class="service-step-card">
+            <span class="step-num-badge">07</span>
+            <div class="service-icon-box">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="3" rx="2"/><path d="M3 9h18"/><path d="M9 21V9"/></svg>
+            </div>
+            <h3 class="service-step-title">Visa Guidance</h3>
+            <p class="service-step-desc">Complete financial file compilation, embassy appointment coordination, and mock interview drills.</p>
+            <div class="service-step-action">Step 7: High Visa Success</div>
+          </div>
+
+          <div class="service-step-card">
+            <span class="step-num-badge">08</span>
+            <div class="service-icon-box">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.2c.4-.3.6-.7.5-1.2z"/></svg>
+            </div>
+            <h3 class="service-step-title">Pre-Departure Support</h3>
+            <p class="service-step-desc">Flight bookings, forex advisory, airport pickup coordination, hostel keys, and student life briefing.</p>
+            <div class="service-step-action">Step 8: Smooth Landing</div>
+          </div>
+
+        </div>
+
+        <div style="text-align: center; margin-top: 3rem;">
+          <a href="services.html" class="btn btn-secondary">
+            <span>View Detailed Services Guide</span>
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         6. Frequently Asked Questions (FAQ Accordion)
+         ======================================================================== -->
+    <section class="section-gap" style="background: rgba(3, 7, 18, 0.7);">
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="badge badge-amber">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" x2="12.01" y1="17" y2="17"/></svg>
+            <span>Got Questions?</span>
+          </span>
+          <h2 class="section-title">Frequently Asked Questions</h2>
+          <p class="section-desc">
+            Common questions parents and students ask regarding study abroad admissions, fees, and safety.
+          </p>
+        </div>
+
+        <div class="faq-wrap">
+          
+          <div class="faq-item active">
+            <button class="faq-trigger">
+              <span>Why is Mauritius considered the most ideal destination for Indian MBBS students?</span>
+              <span class="faq-icon">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+              </span>
+            </button>
+            <div class="faq-content">
+              <p class="faq-text">
+                Mauritius offers an exceptionally safe environment with very low crime rates, separate secure hostels for boys and girls, and No IELTS requirement for admission. The majority of professors and student peers are of Indian origin, ensuring seamless communication and authentic Indian food. Furthermore, graduates have achieved high FMGE passing averages, including the All India 1st Rank holder.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-trigger">
+              <span>Is NEET qualification mandatory for studying MBBS in Mauritius or abroad?</span>
+              <span class="faq-icon">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+              </span>
+            </button>
+            <div class="faq-content">
+              <p class="faq-text">
+                Yes. As mandated by the National Medical Commission (NMC) regulations, qualifying in the NEET exam is mandatory for any Indian citizen who intends to return and practice medicine in India after completing an MBBS degree abroad.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-trigger">
+              <span>Is IELTS compulsory for Germany, Hungary, or Mauritius?</span>
+              <span class="faq-icon">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+              </span>
+            </button>
+            <div class="faq-content">
+              <p class="faq-text">
+                For Mauritius, NO IELTS is required for admission. For Germany and Hungary, many English-medium undergraduate and postgraduate degrees accept Medium of Instruction (MOI) certificates from Indian English-medium boards, while others accept IELTS/TOEFL. We assess your exact university eligibility.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-trigger">
+              <span>How can I book a personal counselling session with Mr. Arunlal M S?</span>
+              <span class="faq-icon">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+              </span>
+            </button>
+            <div class="faq-content">
+              <p class="faq-text">
+                You can call directly at +91 9487808313, chat with us on WhatsApp, or click the "Get Free Guidance" button on this website to schedule an in-depth 1-on-1 session.
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- ========================================================================
+       7. Master Footer & Pre-Footer Banner
+       ======================================================================== -->
+  <footer class="site-footer">
+    <div class="ambient-glow glow-amber" style="top: 0; left: 50%; transform: translateX(-50%); width: 600px; height: 180px;"></div>
+
+    <div class="container" style="position: relative;">
+      
+      <!-- Pre-Footer Banner -->
+      <div class="footer-banner">
+        <div style="max-width: 650px;">
+          <span class="badge badge-amber" style="margin-bottom: 0.75rem;">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 22h16"/><path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"/></svg>
+            <span>Admissions Open for Next Intake</span>
+          </span>
+          <h3 style="font-size: 2rem; font-weight: 900; color: #ffffff; margin-bottom: 0.5rem; line-height: 1.2;">
+            “Your future is global. Let's find the right path together.”
+          </h3>
+          <p style="color: #94a3b8; font-size: 0.95rem;">
+            Speak directly with <strong style="color: #fbbf24;">Arunlal M S</strong> for honest, transparent advice with zero hidden fees.
+          </p>
+        </div>
+
+        <div style="display: flex; flex-direction: column; gap: 0.75rem; width: 100%; max-width: 320px;">
+          <button data-open-guidance class="btn btn-primary">
+            <span>Get Free Guidance</span>
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+          </button>
+          <a href="https://wa.me/919487808313" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+            <span>WhatsApp Chat</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Main Footer Columns -->
+      <div class="footer-cols">
+        
+        <!-- Brand Info -->
+        <div>
+          <a href="index.html" class="brand-logo" style="margin-bottom: 1rem;">
+            <div class="logo-badge" style="width: 38px; height: 38px;">
+              <div class="logo-inner" style="font-size: 1rem;">
+                <span class="text-gradient-brand">VV</span>
+              </div>
+            </div>
+            <div>
+              <span class="brand-text-title" style="font-size: 1.05rem;">Viswa Vidhya</span>
+              <span class="brand-text-sub">Educational Consultancy</span>
+            </div>
+          </a>
+          <p style="font-size: 0.875rem; color: #94a3b8; line-height: 1.6; margin-bottom: 1.25rem;">
+            Empowering students and parents with honest, transparent, and end-to-end guidance for premier study destinations in Mauritius, Germany, and Hungary.
+          </p>
+          <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+            <span class="badge badge-dark">100% Transparent</span>
+            <span class="badge badge-dark">1-on-1 Mentorship</span>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+          <div class="footer-col-title">Quick Links</div>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="destinations.html">Study Destinations</a></li>
+            <li><a href="mauritius.html" style="color: #fbbf24; font-weight: 700;">Mauritius Spotlight</a></li>
+            <li><a href="mbbs-abroad.html" style="color: #2dd4bf; font-weight: 700;">MBBS Abroad</a></li>
+            <li><a href="courses.html">Courses & Opportunities</a></li>
+            <li><a href="services.html">Our 8 Services</a></li>
+            <li><a href="why-choose-us.html">Why Choose Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <!-- Primary Destinations -->
+        <div>
+          <div class="footer-col-title">Destinations</div>
+          <ul class="footer-links">
+            <li>
+              <a href="mauritius.html">
+                <strong style="color: #ffffff;">🇲🇺 Mauritius</strong>
+                <div style="font-size: 0.72rem; color: #64748b;">MBBS & Indian Faculty</div>
+              </a>
+            </li>
+            <li style="margin-top: 0.5rem;">
+              <a href="destinations.html#germany">
+                <strong style="color: #ffffff;">🇩🇪 Germany</strong>
+                <div style="font-size: 0.72rem; color: #64748b;">Tech & Engineering</div>
+              </a>
+            </li>
+            <li style="margin-top: 0.5rem;">
+              <a href="destinations.html#hungary">
+                <strong style="color: #ffffff;">🇭🇺 Hungary</strong>
+                <div style="font-size: 0.72rem; color: #64748b;">EU Standard Medical & Degrees</div>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Direct Counsellor Contact -->
+        <div>
+          <div class="footer-col-title">Direct Contact</div>
+          <div style="padding: 1rem; border-radius: var(--radius-md); background: rgba(15, 23, 42, 0.7); border: 1px solid var(--border-subtle); margin-bottom: 1rem;">
+            <div style="font-weight: 800; color: #ffffff; font-size: 0.95rem;">Arunlal M S</div>
+            <div style="font-size: 0.75rem; color: #fbbf24;">Managing Director & Lead Counsellor</div>
+          </div>
+
+          <div style="display: flex; flex-direction: column; gap: 0.65rem;">
+            <a href="tel:+919487808313" style="display: flex; align-items: center; gap: 0.65rem; color: #cbd5e1; font-size: 0.85rem; font-weight: 600;">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#fbbf24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              <span>+91 9487808313</span>
+            </a>
+
+            <a href="mailto:viswavidhyaconsultancy@gmail.com" style="display: flex; align-items: center; gap: 0.65rem; color: #cbd5e1; font-size: 0.85rem;">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#2dd4bf" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+              <span style="word-break: break-all;">viswavidhyaconsultancy@gmail.com</span>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Bottom Copyright -->
+      <div class="footer-bottom">
+        <div>
+          © 2026 Viswa Vidhya Educational Consultancy. All rights reserved.
+        </div>
+        <div>
+          Study Abroad • MBBS in Mauritius • Germany • Hungary
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ========================================================================
+       8. Global Floating CTAs
+       ======================================================================== -->
+  <div class="floating-actions">
+    <button data-open-guidance class="floating-pill-counsellor">
+      <span class="live-pulse"><span></span><span></span></span>
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#fbbf24" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"/></svg>
+      <span>Talk to Counsellor</span>
+    </button>
+
+    <a href="tel:+919487808313" class="circle-btn-call" title="Call Lead Counsellor" aria-label="Call Viswa Vidhya">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+    </a>
+
+    <a href="https://wa.me/919487808313" target="_blank" rel="noopener noreferrer" class="circle-btn-whatsapp" title="WhatsApp Chat" aria-label="Chat on WhatsApp">
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+    </a>
+  </div>
+
+  <!-- Mobile Sticky Bottom Bar -->
+  <div class="mobile-bottom-bar">
+    <a href="tel:+919487808313" class="btn btn-secondary btn-sm" style="flex: 1; font-size: 0.8rem;">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#fbbf24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+      <span>Call Counsellor</span>
+    </a>
+    <button data-open-guidance class="btn btn-primary btn-sm" style="flex: 1.3; font-size: 0.8rem;">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"/></svg>
+      <span>Free Guidance</span>
+    </button>
+  </div>
+
+  <!-- ========================================================================
+       9. Interactive 3-Step Guidance Modal
+       ======================================================================== -->
+  <div id="guidanceModal" class="modal-backdrop">
+    <div class="modal-box">
+      <div class="modal-top-glow"></div>
+      
+      <button id="closeGuidanceModal" class="modal-close-btn" aria-label="Close guidance modal">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+      </button>
+
+      <div class="modal-body">
+        
+        <!-- Step Indicator -->
+        <div class="modal-step-dots">
+          <div class="step-dot active"></div>
+          <div class="step-dot"></div>
+          <div class="step-dot"></div>
+        </div>
+
+        <!-- Step 1: Destination Selection -->
+        <div id="modalStep1" class="step-content active">
+          <div style="margin-bottom: 0.5rem;">
+            <span class="badge badge-amber">Step 1 of 3</span>
+          </div>
+          <h3 style="font-size: 1.5rem; font-weight: 800; color: #ffffff; margin-bottom: 0.25rem;">Choose Study Destination</h3>
+          <p style="font-size: 0.85rem; color: #94a3b8;">Where would you like to pursue your higher education?</p>
+
+          <div class="selection-grid">
+            <button type="button" class="select-card-btn dest-select-btn selected" data-val="Mauritius">
+              <span class="flag">🇲🇺</span>
+              <span class="name">Mauritius</span>
+              <span class="hint">MBBS & Indian Faculty (No IELTS)</span>
+            </button>
+
+            <button type="button" class="select-card-btn dest-select-btn" data-val="Germany">
+              <span class="flag">🇩🇪</span>
+              <span class="name">Germany</span>
+              <span class="hint">Engineering & Tech Hub (Low Tuition)</span>
+            </button>
+
+            <button type="button" class="select-card-btn dest-select-btn" data-val="Hungary">
+              <span class="flag">🇭🇺</span>
+              <span class="name">Hungary</span>
+              <span class="hint">EU Accredited Medicine & Degrees</span>
+            </button>
+          </div>
+
+          <button type="button" id="toStep2Btn" class="btn btn-primary w-full">
+            <span>Continue to Course Selection</span>
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+          </button>
+        </div>
+
+        <!-- Step 2: Course Category Selection -->
+        <div id="modalStep2" class="step-content">
+          <div style="margin-bottom: 0.5rem;">
+            <span class="badge badge-teal">Step 2 of 3</span>
+          </div>
+          <h3 style="font-size: 1.5rem; font-weight: 800; color: #ffffff; margin-bottom: 0.25rem;">Select Course Level</h3>
+          <p style="font-size: 0.85rem; color: #94a3b8;">What program category are you planning to pursue?</p>
+
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.65rem; margin-top: 1rem; margin-bottom: 1.5rem;">
+            <button type="button" class="select-card-btn course-select-btn selected" data-val="MBBS">
+              <span style="color: #fbbf24; font-size: 0.75rem; font-weight: 800;">🔥 Top Choice</span>
+              <span class="name">MBBS / Medicine</span>
+            </button>
+
+            <button type="button" class="select-card-btn course-select-btn" data-val="UG">
+              <span style="color: #2dd4bf; font-size: 0.75rem; font-weight: 800;">3 - 4 Years</span>
+              <span class="name">Bachelor (UG / B.Tech / BBA)</span>
+            </button>
+
+            <button type="button" class="select-card-btn course-select-btn" data-val="PG">
+              <span style="color: #60a5fa; font-size: 0.75rem; font-weight: 800;">1 - 2 Years</span>
+              <span class="name">Master (PG / MBA / MS)</span>
+            </button>
+
+            <button type="button" class="select-card-btn course-select-btn" data-val="Diploma">
+              <span style="color: #34d399; font-size: 0.75rem; font-weight: 800;">Fast-track</span>
+              <span class="name">Diploma Programs</span>
+            </button>
+          </div>
+
+          <div style="display: flex; gap: 0.75rem;">
+            <button type="button" id="backToStep1Btn" class="btn btn-secondary" style="flex: 1;">Back</button>
+            <button type="button" id="toStep3Btn" class="btn btn-teal" style="flex: 2;">
+              <span>Continue to Contact Info</span>
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- Step 3: Contact Details Form -->
+        <div id="modalStep3" class="step-content">
+          <div style="display: flex; align-items: center; justify-content: space-between; padding: 0.65rem 0.85rem; border-radius: var(--radius-md); background: rgba(30, 41, 59, 0.6); margin-bottom: 1rem; font-size: 0.8rem;">
+            <div>Target: <strong id="summaryDestBadge" style="color: #fbbf24;">Mauritius</strong></div>
+            <div>Course: <strong id="summaryCourseBadge" style="color: #2dd4bf;">MBBS</strong></div>
+            <button type="button" id="changeFromStep3" style="color: #60a5fa; font-weight: 700; text-decoration: underline;">Change</button>
+          </div>
+
+          <form id="modalForm">
+            <div class="form-group">
+              <label class="form-label">Full Name <span class="req">*</span></label>
+              <div class="input-with-icon">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                <input type="text" id="modalInputName" class="form-control" required placeholder="e.g. Rahul Sharma">
+              </div>
+            </div>
+
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem;">
+              <div class="form-group">
+                <label class="form-label">Phone / WhatsApp <span class="req">*</span></label>
+                <div class="input-with-icon">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                  <input type="tel" id="modalInputPhone" class="form-control" required placeholder="+91 98765 43210">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label">Email Address</label>
+                <div class="input-with-icon">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                  <input type="email" id="modalInputEmail" class="form-control" placeholder="rahul@gmail.com">
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">Query / Academic Background</label>
+              <textarea id="modalInputMessage" class="form-control" rows="2" style="padding-left: 1rem;" placeholder="e.g. 12th PCB student / NEET qualified, looking for budget guidance..."></textarea>
+            </div>
+
+            <div style="display: flex; gap: 0.75rem; margin-top: 1.25rem;">
+              <button type="button" id="backToStep2Btn" class="btn btn-secondary" style="flex: 1;">Back</button>
+              <button type="submit" class="btn btn-primary" style="flex: 2;">
+                <span>Submit & Get Roadmap</span>
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m22 2-7 20-4-9-9-4Z"/><path d="M22 2 11 13"/></svg>
+              </button>
+            </div>
+          </form>
+        </div>
+
+        <!-- Submitted View -->
+        <div id="modalStepSubmitted" class="step-content" style="text-align: center; padding: 1.5rem 0.5rem;">
+          <div style="width: 64px; height: 64px; border-radius: 9999px; background: rgba(16, 185, 129, 0.2); border: 1px solid rgba(16, 185, 129, 0.4); display: flex; align-items: center; justify-content: center; margin: 0 auto 1.25rem auto; color: #34d399;">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+          </div>
+          <h3 style="font-size: 1.6rem; font-weight: 800; color: #ffffff; margin-bottom: 0.5rem;">Thank You, <span id="submittedStudentName">Student</span>!</h3>
+          <p style="color: #94a3b8; font-size: 0.9rem; line-height: 1.6; max-width: 420px; margin: 0 auto 1.5rem auto;">
+            Your guidance request for <strong id="submittedTargetCourse" style="color: #2dd4bf;">MBBS</strong> in <strong id="submittedTargetDest" style="color: #fbbf24;">Mauritius</strong> has been received. <strong>Mr. Arunlal M S</strong> will call you shortly at <strong id="submittedStudentPhone"></strong>.
+          </p>
+
+          <div style="display: flex; gap: 0.75rem; justify-content: center;">
+            <button type="button" id="modalWhatsappBtn" class="btn btn-whatsapp">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+              <span>Chat on WhatsApp</span>
+            </button>
+            <button type="button" id="modalDoneBtn" class="btn btn-secondary">Done</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+</body>
 </html>

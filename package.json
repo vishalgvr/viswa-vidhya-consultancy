@@ -4,10 +4,11 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "tsc -b && vite build",
-    "lint": "oxlint",
-    "preview": "vite preview"
+    "start": "node server.js",
+    "serve": "node server.js",
+    "dev": "node server.js",
+    "build": "echo 'Static multi-page HTML website ready.'",
+    "preview": "node server.js"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.3.3",
