@@ -602,28 +602,41 @@ main {
   gap: 0.65rem;
 }
 
-.phone-quick-btn {
+.phone-quick-btn,
+.nav-contact-btn {
   display: none;
   align-items: center;
   gap: 0.45rem;
-  padding: 0.5rem 0.9rem;
+  padding: 0.52rem 0.95rem;
   border-radius: var(--radius-md);
   background: rgba(15, 23, 42, 0.75);
   border: 1px solid var(--border-subtle);
-  font-size: 0.8rem;
+  font-size: 0.825rem;
   font-weight: 600;
-  color: var(--text-secondary);
+  color: var(--text-primary);
+  text-decoration: none;
+  transition: var(--transition);
 }
 
-@media (min-width: 768px) {
-  .phone-quick-btn {
+@media (min-width: 640px) {
+  .phone-quick-btn,
+  .nav-contact-btn {
     display: inline-flex;
   }
 }
 
-.phone-quick-btn:hover {
+.phone-quick-btn:hover,
+.nav-contact-btn:hover {
   color: #ffffff;
+  background: rgba(30, 41, 59, 0.9);
   border-color: rgba(255, 255, 255, 0.25);
+  transform: translateY(-1px);
+}
+
+.nav-contact-btn.active {
+  border-color: var(--amber-400);
+  color: var(--amber-400);
+  background: rgba(245, 158, 11, 0.1);
 }
 
 .mobile-menu-btn {
