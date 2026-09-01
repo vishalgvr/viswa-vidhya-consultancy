@@ -16,12 +16,56 @@ const BRAND_DATA = {
 };
 
 document.addEventListener('DOMContentLoaded', () => {
+  initThemeToggle();
   initNavbar();
   initTicker();
   initFAQAccordion();
   initGuidanceModal();
   initContactForms();
 });
+
+/* ==========================================================================
+   0. Theme Switcher (Vertical Light/Dark Toggle)
+   ========================================================================== */
+function initThemeToggle() {
+  const toggleBtns = document.querySelectorAll('.theme-toggle-vertical');
+  const logos = document.querySelectorAll('.brand-logo-img, .footer-logo-img');
+
+  function applyTheme(theme) {
+    if (theme === 'dark') {
+      document.documentElement.setAttribute('data-theme', 'dark');
+      toggleBtns.forEach(btn => {
+        btn.classList.add('active-dark');
+        btn.setAttribute('aria-label', 'Switch to light theme');
+      });
+      logos.forEach(img => {
+        img.src = 'images/logo.png';
+      });
+    } else {
+      document.documentElement.setAttribute('data-theme', 'light');
+      toggleBtns.forEach(btn => {
+        btn.classList.remove('active-dark');
+        btn.setAttribute('aria-label', 'Switch to dark theme');
+      });
+      logos.forEach(img => {
+        img.src = 'images/logo-light.png';
+      });
+    }
+    localStorage.setItem('vv_theme', theme);
+  }
+
+  // Load initial theme from localStorage (default: light)
+  const savedTheme = localStorage.getItem('vv_theme') || 'light';
+  applyTheme(savedTheme);
+
+  toggleBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const currentTheme = document.documentElement.getAttribute('data-theme') || 'light';
+      const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+      applyTheme(newTheme);
+    });
+  });
+}
 
 /* ==========================================================================
    1. Navbar & Mobile Drawer
