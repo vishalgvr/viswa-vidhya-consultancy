@@ -341,14 +341,14 @@ function initContactForms() {
     const formCard = contactForm.closest('.glass-panel') || contactForm.parentElement;
     formCard.innerHTML = `
       <div style="text-align: center; padding: 2.5rem 1rem;">
-        <div style="width: 64px; height: 64px; border-radius: 9999px; background: rgba(16, 185, 129, 0.2); border: 1px solid rgba(16, 185, 129, 0.4); display: flex; align-items: center; justify-content: center; margin: 0 auto 1.25rem auto; color: #34d399;">
+        <div style="width: 64px; height: 64px; border-radius: 9999px; background: #d1fae5; border: 1px solid #a7f3d0; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.25rem auto; color: #059669;">
           <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
             <path d="M20 6 9 17l-5-5"/>
           </svg>
         </div>
-        <h3 style="font-size: 1.6rem; font-weight: 800; margin-bottom: 0.5rem; color: #ffffff;">Thank You, ${escapeHtml(name)}!</h3>
-        <p style="color: #94a3b8; font-size: 0.95rem; line-height: 1.6; max-width: 440px; margin: 0 auto 1.5rem auto;">
-          Your study guidance request for <strong style="color: #fbbf24;">${escapeHtml(course)}</strong> in <strong style="color: #2dd4bf;">${escapeHtml(dest)}</strong> has been registered. <strong>Mr. Arunlal M S</strong> will connect with you at <strong>${escapeHtml(phone)}</strong>.
+        <h3 style="font-size: 1.6rem; font-weight: 800; margin-bottom: 0.5rem; color: #0f172a;">Thank You, ${escapeHtml(name)}!</h3>
+        <p style="color: #475569; font-size: 0.95rem; line-height: 1.6; max-width: 440px; margin: 0 auto 1.5rem auto;">
+          Your study guidance request for <strong style="color: #0f766e;">${escapeHtml(course)}</strong> in <strong style="color: #b45309;">${escapeHtml(dest)}</strong> has been registered. <strong>Mr. Arunlal M S</strong> will connect with you at <strong>${escapeHtml(phone)}</strong>.
         </p>
         <div style="display: flex; flex-wrap: wrap; gap: 0.75rem; justify-content: center;">
           <a href="https://wa.me/919487808313?text=${encodeURIComponent(`Hello Mr. Arunlal M S,\nName: ${name}\nPhone: ${phone}\nEmail: ${email}\nDestination: ${dest}\nCourse: ${course}\nMessage: ${message}`)}" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp">

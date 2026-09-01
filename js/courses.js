@@ -123,8 +123,8 @@ document.addEventListener('DOMContentLoaded', () => {
       container.innerHTML = `
         <div style="grid-column: 1 / -1; text-align: center; padding: 4rem 1.5rem;" class="glass-panel">
           <div style="font-size: 2.5rem; margin-bottom: 0.75rem;">🔍</div>
-          <h3 style="font-size: 1.4rem; font-weight: 800; color: #ffffff; margin-bottom: 0.5rem;">No Matching Courses Found</h3>
-          <p style="color: #94a3b8; font-size: 0.9rem; max-width: 460px; margin: 0 auto 1.5rem auto;">
+          <h3 style="font-size: 1.4rem; font-weight: 800; color: #0f172a; margin-bottom: 0.5rem;">No Matching Courses Found</h3>
+          <p style="color: #475569; font-size: 0.9rem; max-width: 460px; margin: 0 auto 1.5rem auto;">
             Looking for a custom discipline, specific university eligibility, or tuition details? Speak directly with our lead counsellor.
           </p>
           <button data-open-guidance class="btn btn-primary btn-sm">
@@ -147,12 +147,12 @@ document.addEventListener('DOMContentLoaded', () => {
         if (d === 'Mauritius') flag = '🇲🇺';
         else if (d === 'Germany') flag = '🇩🇪';
         else if (d === 'Hungary') flag = '🇭🇺';
-        return `<span style="font-size: 0.75rem; color: #f8fafc; font-weight: 600;">${flag} ${d}</span>`;
+        return `<span style="font-size: 0.75rem; color: #0f172a; font-weight: 600;">${flag} ${d}</span>`;
       }).join(' • ');
 
       const highlightsList = course.highlights.map(h => `
         <li>
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#fbbf24" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#d97706" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;">
             <polyline points="20 6 9 17 4 12"></polyline>
           </svg>
           <span>${h}</span>
@@ -163,7 +163,7 @@ document.addEventListener('DOMContentLoaded', () => {
         <div class="course-card glass-card-hover">
           <div class="course-card-top">
             <span class="badge ${badgeClass}">${course.category}</span>
-            <span style="font-size: 0.75rem; color: #94a3b8; font-weight: 600;">⏱ ${course.duration}</span>
+            <span style="font-size: 0.75rem; color: #64748b; font-weight: 600;">⏱ ${course.duration}</span>
           </div>
 
           <h3 class="course-card-title">${course.title}</h3>
@@ -176,7 +176,7 @@ document.addEventListener('DOMContentLoaded', () => {
             </div>
             <div>
               <div class="course-meta-lbl">Eligibility</div>
-              <div class="course-meta-val" style="font-size: 0.75rem; color: #cbd5e1;">${course.eligibility}</div>
+              <div class="course-meta-val" style="font-size: 0.75rem; color: #475569;">${course.eligibility}</div>
             </div>
           </div>
 
@@ -184,7 +184,7 @@ document.addEventListener('DOMContentLoaded', () => {
             ${highlightsList}
           </ul>
 
-          <div style="margin-top: auto; padding-top: 1rem; border-top: 1px solid rgba(255,255,255,0.06); display: flex; align-items: center; justify-content: space-between; gap: 0.5rem;">
+          <div style="margin-top: auto; padding-top: 1rem; border-top: 1px solid #e2e8f0; display: flex; align-items: center; justify-content: space-between; gap: 0.5rem;">
             <button 
               data-open-guidance 
               data-dest="${course.popularDestinations[0]}" 
