@@ -411,19 +411,20 @@ main {
   display: flex;
   align-items: center;
   gap: 0.75rem;
+  text-decoration: none;
 }
 
 .brand-logo-img {
-  height: 44px;
+  height: 48px;
   width: auto;
-  max-width: 160px;
+  max-width: 180px;
   object-fit: contain;
   filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.4));
   transition: transform 0.3s ease;
 }
 
 .brand-logo:hover .brand-logo-img {
-  transform: scale(1.04);
+  transform: scale(1.05);
 }
 
 .footer-logo-img {
